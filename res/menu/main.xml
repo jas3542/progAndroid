@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+     Search / will display always 
+     android:actionViewClass="android.widget.SearchView"/>     per buscar
+    -->
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="ifRoom"
+        android:title="@string/searcher"/>
+
+    <!-- Refresh -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/refresh"/>
+
+    <!-- settings overflow menu -->
+    <item
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_settings"
+                android:showAsAction="ifRoom"
+                android:title="@string/action_settings"/>
+        </menu>
+    </item>
+
+</menu>
